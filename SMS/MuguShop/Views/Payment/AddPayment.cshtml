@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "AddPayment";
+}
+
+<h1>AddPayment</h1>
+
+<form action="https://localhost:44355/api/CompassPlus/OneTimePayment" method="post">
+  <label for="fbusinessName">Business Name</label><br>
+  <input type="text" id="fbusinessName" name="BusinessName" value="Imark"><br><br />
+  <label for="fclientcode">Client Code</label><br>
+  <input type="text" id="fclientCode" name="ClientCode" value="12345"><br><br>
+  <label for="fcontactNumber">Business Contact Number</label><br>
+  <input type="text" id="fcontactNumber" name="ContactNumber" value="012345678"><br><br>
+  <label for="fmobileNumber">Mobile Number</label><br>
+  <input type="text" id="fmobileNumber" name="MobileNumber" value="9823249823"><br><br>
+  <label for="femailAddress">Email Address</label><br>
+  <input type="email" id="femailAddress" name="EmailAddress" value="sidd@gmail.com"><br><br>
+  <label for="famount">Transaction Amount(In paisa)</label><br>
+  <input type="number" id="famount" name="Amount" value=1><br><br>
+  <label for="fremarks">Remarks</label><br>
+  <input type="text" id="fremarks" name="remarks" value="sidd@gmail.com"><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+

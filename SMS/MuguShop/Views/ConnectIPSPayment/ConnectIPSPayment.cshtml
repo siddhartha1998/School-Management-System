@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = "ConnectIPSPayment";
+}
+
+<h1>ConnectIPSPayment</h1>
+
+<form action="https://localhost:44355/api/ConnectIPS" method="post">
+  <label for="fclientcode">Client Code</label><br>
+  <input type="text" id="fclientcode" name="ClientCode" value="John"><br><br />
+
+  <label for="famount">Tranaction Amount</label><br>
+  <input type="text" id="famount" name="TXNAMT" value=100><br><br>
+
+  <label for="fremarks">Remarks</label><br>
+  <input type="text" id="fremarks" name="Remarks" value="Doe"><br><br>
+
+  <label for="fremarks">ClientTXNID</label><br>
+  <input type="text" id="fremarks" name="ClientTXNID" value="ClientTXNID"><br><br>
+
+  <label for="fparticulars">Particulars</label><br>
+  <input type="text" id="fparticulars" name="Particulars" value="Doe"><br><br>
+
+  <label for="fsuccessURL">SuccessURL</label><br>
+  <input type="text" id="fsuccesURL" name="SuccessURL" value=""><br><br>
+
+  <label for="ffailureURL">FailureURL</label><br>
+  <input type="text" id="ffailureURL" name="FailureURL" value="Doe"><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+

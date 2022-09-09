@@ -1,0 +1,28 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<input type="button" id="myBtn" value="Pay To Imark From MuguShop" />
+<form action="https://localhost:44355/api/CompassPlus" method="post">
+  <label for="fclientcode">Client Code</label><br>
+  <input type="text" id="fclientcode" name="ClientCode" value="John"><br>
+  <label for="famount">Tranaction Amount:</label><br>
+  <input type="text" id="famount" name="TXNAMT" value=100><br><br>
+  <label for="fremarks">Remarks</label><br>
+  <input type="text" id="fremarks" name="Remarks" value="Doe"><br><br>
+  <label for="fremarks">ClientTXNID</label><br>
+  <input type="text" id="fremarks" name="ClientTXNID" value="ClientTXNID"><br><br>
+  <label for="fparticulars">Particulars</label><br>
+  <input type="text" id="fparticulars" name="Particulars" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<script type="text/javascript">
+
+    document.getElementById("myBtn")
+    .addEventListener("click", function() {
+        alert("Hello World Imark!");
+    });
+
+</script>
